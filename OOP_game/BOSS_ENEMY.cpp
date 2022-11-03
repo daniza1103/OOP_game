@@ -1,11 +1,11 @@
-//...............Класс BOSS_ENEMY
-//...............Файл типа .cpp
+п»ї//...............РљР»Р°СЃСЃ BOSS_ENEMY
+//...............Р¤Р°Р№Р» С‚РёРїР° .cpp
 
 #include "pch.h"
 #include "EASY_ENEMY.h"
 #include "BOSS_ENEMY.h"
 
-//добавляем дополнительные очки (в XP) противнику-боссу в пределах от 200 до 300:
+//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РїСЂРѕС‚РёРІРЅРёРєСѓ-Р±РѕСЃСЃСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 200 РґРѕ 300:
 int BOSS_ENEMY::Total_Score_BOSS(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point) {
 	srand(time(NULL));
 	int BOSS_points = 200 + rand() % 100;
@@ -14,6 +14,6 @@ int BOSS_ENEMY::Total_Score_BOSS(int data_Power, int data_Intellect, int data_En
 	Total_Points = data_Power + data_Intellect + data_Endurance + data_Extra_Point + BOSS_points;
 	cout << Total_Points;
 	cout << " XP";
-	cout << "\n	\x1b[36mКоличество дополнительных очков: \x1b[0m" << BOSS_points;
+	cout << "\n	\x1b[36mРљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РѕС‡РєРѕРІ: \x1b[0m" << BOSS_points;
 	return Total_Points;
 }

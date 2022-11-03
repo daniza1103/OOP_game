@@ -1,5 +1,5 @@
-//...............Класс EASY_ENEMY
-//...............Файл типа .h
+п»ї//...............РљР»Р°СЃСЃ EASY_ENEMY
+//...............Р¤Р°Р№Р» С‚РёРїР° .h
 
 #pragma once
 #include <iostream>
@@ -7,23 +7,23 @@
 
 using namespace std;
 
-class EASY_ENEMY {     //базовый класс 
+class EASY_ENEMY {     //Р±Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ 
 
-protected: //зададим характеристики: 
-	string Name;       //имя 
-	int Power;         //сила противника (в очках XP)
-	int Intellect;     //смекалка (в очках XP)
-	int Endurance;     //выносливость (в очках XP)
-	string Extra;      //название дополнительная способность
-	int Extra_Point;   //дополнительная способность (в очках XP)
+protected: //Р·Р°РґР°РґРёРј С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё: 
+	string Name;       //РёРјСЏ 
+	int Power;         //СЃРёР»Р° (РІ РѕС‡РєР°С… XP)
+	int Intellect;     //СЃРјРµРєР°Р»РєР° (РІ РѕС‡РєР°С… XP)
+	int Endurance;     //РІС‹РЅРѕСЃР»РёРІРѕСЃС‚СЊ (РІ РѕС‡РєР°С… XP)
+	string Extra;      //РЅР°Р·РІР°РЅРёРµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ
+	int Extra_Point;   //РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ (РІ РѕС‡РєР°С… XP)
 
-public: //зададим методы:
-	//добавляем характеристики:
+public: //Р·Р°РґР°РґРёРј РјРµС‚РѕРґС‹:
+	//РґРѕР±Р°РІР»СЏРµРј С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё:
 	void Set_Specifications(string data_Name, int data_Power, int data_Intellect, int data_Endurance, string data_Extra, int data_Extra_Point);
 
-	//выводим характеристики:
+	//РІС‹РІРѕРґРёРј С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё:
 	void Get_Specifications();
 
-	//подсчитываем суммарное количество очков (в XP) противника:
+	//РїРѕРґСЃС‡РёС‚С‹РІР°РµРј СЃСѓРјРјР°СЂРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‡РєРѕРІ (РІ XP):
 	int Total_Score(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point);
 };

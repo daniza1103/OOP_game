@@ -1,10 +1,10 @@
-//...............Класс EASY_ENEMY
-//...............Файл типа .cpp
+п»ї//...............РљР»Р°СЃСЃ EASY_ENEMY
+//...............Р¤Р°Р№Р» С‚РёРїР° .cpp
 
 #include "pch.h"
 #include "EASY_ENEMY.h"
 
-//добавляем характеристики:
+//РґРѕР±Р°РІР»СЏРµРј С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё:
 void EASY_ENEMY::Set_Specifications(string data_Name, int data_Power, int data_Intellect, int data_Endurance, string data_Extra, int data_Extra_Point) {
 	Name = data_Name;
 	Power = data_Power;
@@ -14,16 +14,16 @@ void EASY_ENEMY::Set_Specifications(string data_Name, int data_Power, int data_I
 	Extra_Point = data_Extra_Point;
 }
 
-//выводим характеристики:
+//РІС‹РІРѕРґРёРј С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё:
 void EASY_ENEMY::Get_Specifications() {
-	cout << "\n		Имя: " << Name;
-	cout << "\n		Сила: " << Power << " XP";
-	cout << "\n		Смекалка: " << Intellect << " XP";
-	cout << "\n		Выносливость: " << Endurance << " XP";
-	cout << "\n		Дополнительная способность: " << Extra << ", добавляющая " << Extra_Point << " XP";
+	cout << "\n		РРјСЏ: " << Name;
+	cout << "\n		РЎРёР»Р°: " << Power << " XP";
+	cout << "\n		РЎРјРµРєР°Р»РєР°: " << Intellect << " XP";
+	cout << "\n		Р’С‹РЅРѕСЃР»РёРІРѕСЃС‚СЊ: " << Endurance << " XP";
+	cout << "\n		Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ: " << Extra << ", РґРѕР±Р°РІР»СЏСЋС‰Р°СЏ " << Extra_Point << " XP";
 }
 
-//подсчитываем суммарное количество очков (в XP):
+//РїРѕРґСЃС‡РёС‚С‹РІР°РµРј СЃСѓРјРјР°СЂРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‡РєРѕРІ (РІ XP):
 int EASY_ENEMY::Total_Score(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point) {
 	int Total_Points = 0;
 	Total_Points = data_Power + data_Intellect + data_Endurance + data_Extra_Point;

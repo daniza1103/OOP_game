@@ -1,17 +1,17 @@
-//...............Класс PLAYER
-//...............Файл типа .h
+п»ї//...............РљР»Р°СЃСЃ PLAYER
+//...............Р¤Р°Р№Р» С‚РёРїР° .h
 
 #pragma once
 #include <iostream>
 #include <string>
 
-class PLAYER : protected EASY_ENEMY {     //производный класс 
+class PLAYER : protected EASY_ENEMY {     //РїСЂРѕРёР·РІРѕРґРЅС‹Р№ РєР»Р°СЃСЃ 
 
 public:
-	//добавляем дополнительные очки (в XP) игроку в пределах от 300 до 500, если он победил в игре "орел и решка":
+	//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РёРіСЂРѕРєСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 300 РґРѕ 500, РµСЃР»Рё РѕРЅ РїРѕР±РµРґРёР» РІ РёРіСЂРµ "РѕСЂРµР» Рё СЂРµС€РєР°":
 	int Successful_Total_Score_PLAYER(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point);
 
-	//добавляем дополнительные очки (в XP) игроку в пределах от 50 до 100, если он проиграл в игре "орел и решка":
+	//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РёРіСЂРѕРєСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 50 РґРѕ 100, РµСЃР»Рё РѕРЅ РїСЂРѕРёРіСЂР°Р» РІ РёРіСЂРµ "РѕСЂРµР» Рё СЂРµС€РєР°":
 	int Unsuccessful_Total_Score_PLAYER(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point);
 
 	EASY_ENEMY::Set_Specifications;

@@ -1,14 +1,14 @@
-//...............Класс BOSS_ENEMY
-//...............Файл типа .h
+п»ї//...............РљР»Р°СЃСЃ BOSS_ENEMY
+//...............Р¤Р°Р№Р» С‚РёРїР° .h
 
 #pragma once
 #include <iostream>
 #include <string>
 
-class BOSS_ENEMY : protected EASY_ENEMY {     //производный класс 
+class BOSS_ENEMY : protected EASY_ENEMY {     //РїСЂРѕРёР·РІРѕРґРЅС‹Р№ РєР»Р°СЃСЃ 
 
 public:
-	//добавляем дополнительные очки (в XP) противнику-боссу в пределах от 200 до 300:
+	//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РїСЂРѕС‚РёРІРЅРёРєСѓ-Р±РѕСЃСЃСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 200 РґРѕ 300:
 	int Total_Score_BOSS(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point);
 	EASY_ENEMY::Set_Specifications;
 	EASY_ENEMY::Get_Specifications;

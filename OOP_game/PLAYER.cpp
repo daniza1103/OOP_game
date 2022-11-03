@@ -1,11 +1,11 @@
-//...............Класс PLAYER
-//...............Файл типа .cpp
+п»ї//...............РљР»Р°СЃСЃ PLAYER
+//...............Р¤Р°Р№Р» С‚РёРїР° .cpp
 
 #include "pch.h"
 #include "EASY_ENEMY.h"
 #include "PLAYER.h"
 
-//добавляем дополнительные очки (в XP) игроку в пределах от 300 до 500, если он победил в игре "орел и решка":
+//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РёРіСЂРѕРєСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 300 РґРѕ 500, РµСЃР»Рё РѕРЅ РїРѕР±РµРґРёР» РІ РёРіСЂРµ "РѕСЂРµР» Рё СЂРµС€РєР°":
 int PLAYER::Successful_Total_Score_PLAYER(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point) {
 	srand(time(NULL));
 	int PLAYER_points = 300 + rand() % 200;
@@ -14,11 +14,11 @@ int PLAYER::Successful_Total_Score_PLAYER(int data_Power, int data_Intellect, in
 	Total_Points = data_Power + data_Intellect + data_Endurance + data_Extra_Point + PLAYER_points;
 	cout << Total_Points;
 	cout << " XP";
-	cout << "\n	\x1b[36mКоличество дополнительных очков: \x1b[0m" << PLAYER_points;
+	cout << "\n	\x1b[36mРљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РѕС‡РєРѕРІ: \x1b[0m" << PLAYER_points;
 	return Total_Points;
 }
 
-//добавляем дополнительные очки (в XP) игроку в пределах от 50 до 100, если он проиграл в игре "орел и решка":
+//РґРѕР±Р°РІР»СЏРµРј РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РѕС‡РєРё (РІ XP) РёРіСЂРѕРєСѓ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 50 РґРѕ 100, РµСЃР»Рё РѕРЅ РїСЂРѕРёРіСЂР°Р» РІ РёРіСЂРµ "РѕСЂРµР» Рё СЂРµС€РєР°":
 int PLAYER::Unsuccessful_Total_Score_PLAYER(int data_Power, int data_Intellect, int data_Endurance, int data_Extra_Point) {
 	srand(time(NULL));
 	int PLAYER_points = 50 + rand() % 50;
@@ -27,6 +27,6 @@ int PLAYER::Unsuccessful_Total_Score_PLAYER(int data_Power, int data_Intellect, 
 	Total_Points = data_Power + data_Intellect + data_Endurance + data_Extra_Point + PLAYER_points;
 	cout << Total_Points;
 	cout << " XP";
-	cout << "\n	\x1b[36mКоличество дополнительных очков: \x1b[0m" << PLAYER_points;
+	cout << "\n	\x1b[36mРљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РѕС‡РєРѕРІ: \x1b[0m" << PLAYER_points;
 	return Total_Points;
 }
