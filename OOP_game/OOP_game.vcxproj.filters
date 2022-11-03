@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\enemies">
+      <UniqueIdentifier>{e52073a1-89b0-41f3-b190-c48107f9b1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\enemies">
+      <UniqueIdentifier>{e6715208-a17e-4262-8373-5ddcef140894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\player">
+      <UniqueIdentifier>{d114777e-c3c6-433f-9cf6-9561f8697ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\player">
+      <UniqueIdentifier>{12b9da04-c726-4d8a-9289-a6d60cb17c0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MAIN_FUNC.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="MENU.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="BOSS_ENEMY.cpp">
+      <Filter>Исходные файлы\enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="EASY_ENEMY.cpp">
+      <Filter>Исходные файлы\enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="PLAYER.cpp">
+      <Filter>Исходные файлы\player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MENU.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="BOSS_ENEMY.h">
+      <Filter>Файлы заголовков\enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="EASY_ENEMY.h">
+      <Filter>Файлы заголовков\enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER.h">
+      <Filter>Файлы заголовков\player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

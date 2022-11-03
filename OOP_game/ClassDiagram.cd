@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MENU">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAACAkAgACCRwAAAAAAAAggMBAEEIAAAEABA=</HashCode>
+      <FileName>MENU.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BOSS_ENEMY">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BOSS_ENEMY.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EASY_ENEMY">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAAAAAADAAKAAQAAAAAAAABAAAAAAAAAgA=</HashCode>
+      <FileName>EASY_ENEMY.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PLAYER">
+    <Position X="2.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>PLAYER.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
